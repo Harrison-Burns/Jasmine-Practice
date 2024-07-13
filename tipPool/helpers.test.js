@@ -55,7 +55,7 @@ describe("Utilities test (with setup and tear-down)", function() {
     it('should generate delete td and append to tr on appendDeleteBtn(tr, type)', function () {
       let newTr = document.createElement('tr');
   
-      appendDeleteBtn(newTr);
+      addDelBtn(newTr);
   
       expect(newTr.children.length).toEqual(1);
       expect(newTr.firstChild.innerHTML).toEqual('X');
